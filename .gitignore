@@ -1,28 +1,56 @@
-# OSX
-#
+# OS X
 .DS_Store
+.localized
 
-# Xcode
-#
-build/
-*.pbxuser
-!default.pbxuser
+# Xcode user-specific files
 *.mode1v3
-!default.mode1v3
 *.mode2v3
-!default.mode2v3
 *.perspectivev3
-!default.perspectivev3
-xcuserdata
+*.pbxuser
 *.xccheckout
 *.moved-aside
+*.hmap
+
+# Xcode user-specific directories
+xcuserdata
+profile
+
+# Xcode build files and directories
+build
+output
 DerivedData
+*.o
+*.LinkFileList
 *.hmap
 *.ipa
-*.xcuserstate
-project.xcworkspace
+*.dSYM.zip
 
-# node.js
-#
+# Automatic backup files
+*~.nib/
+*.swp
+*~
+*.dat
+*.dep
+
+# AppCode files and directories
+.idea
+*.iml
+
+# Raw logs
+xcodebuild.log
+xcodebuild_error.log
+
+# CocoaPods files
+Pods
+
+# Carthage files
+Carthage
+
+# Bundler files
+.bundle
+vendor
+Bundler
+
+# Node files
 node_modules/
 npm-debug.log

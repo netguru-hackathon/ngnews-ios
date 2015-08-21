@@ -1,10 +1,7 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- */
 'use strict';
 
 var React = require('react-native');
+
 var {
   AppRegistry,
   StyleSheet,
@@ -12,8 +9,10 @@ var {
   View,
 } = React;
 
-var NGNews = React.createClass({
-  render: function() {
+
+class NGNews extends React.Component {
+
+  render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
@@ -29,7 +28,8 @@ var NGNews = React.createClass({
       </View>
     );
   }
-});
+
+}
 
 var styles = StyleSheet.create({
   container: {
