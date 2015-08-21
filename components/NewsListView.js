@@ -23,7 +23,6 @@ class NewsListView extends React.Component {
   }
 
   render() {
-    console.log(this.state);
     return (
       <ListView
         style={styles.listView}
@@ -47,7 +46,7 @@ class NewsListView extends React.Component {
   }
 
   pressRow(rowIndex) {
-    console.log(rowIndex);
+    
   }
 
 }
