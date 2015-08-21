@@ -20,6 +20,27 @@ class NewsListView extends React.Component {
     this.state = {
       dataSource: dataSource
     }
+    this.mountTimer = this.mountTimer.bind(this);
+  }
+
+  mountTimer() {
+    this.refreshNews()
+    setTimeout(this.mountTimer, 500);
+  }
+
+  componentDidMount() {
+    this.mountTimer();
+  }
+
+  refreshNews() {
+    var that = this;
+    fetch('https://netguru-news.herokuapp.com/api/v1/items')
+      .then((response) => response.json())
+      .then((items) => {
+        that.setState({
+          dataSource: that.state.dataSource.cloneWithRows(items["items"])
+        });
+      });
   }
 
   render() {
@@ -37,16 +58,11 @@ class NewsListView extends React.Component {
       <View style={styles.rowView}>
       <NewsListElement
           icon = {data.icon}
-          time = {data.time}
-          title = {data.title}
-          onPress = {() => this.pressRow(rowIndex)}
+          time = {data.date}
+          title = {data.body}
         />
       </View>
     );
-  }
-
-  pressRow(rowIndex) {
-    
   }
 
 }

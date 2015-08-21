@@ -12,15 +12,13 @@ class NewsListElement extends React.Component {
 
   render() {
     return (
-      <TouchableHighlight onPress={this.props.onPress}>
-        <View style={styles.rowView}>
-          <Image style={styles.thumbImage} source={{uri: this.props.icon}} />
-          <View style={styles.contentView}>
-            <Text style={styles.timeText}>{this.props.time}</Text>
-            <Text style={styles.titleText}>{this.props.title}</Text>
-          </View>
+      <View style={styles.rowView}>
+        <Image style={styles.thumbImage} source={{uri: this.props.icon}} />
+        <View style={styles.contentView}>
+          <Text style={styles.timeText}>{this.props.time}</Text>
+          <Text style={styles.titleText}>{this.props.title}</Text>
         </View>
-      </TouchableHighlight>
+      </View>
     );
   }
 
