@@ -33,7 +33,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 	
 	NSURL *jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle"];
-	RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"NGNews" launchOptions:launchOptions];
+	RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation moduleName:@"RootView" launchOptions:launchOptions];
 	
 	self.window.rootViewController = [self rootViewControllerWithRootView:rootView];
 	[self.window makeKeyAndVisible];
