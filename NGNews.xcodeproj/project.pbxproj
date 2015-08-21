@@ -7,21 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A3E66501B8753DF00339367 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A3E664F1B8753DF00339367 /* LaunchScreen.xib */; };
 		3A9FDC5D1B873CB500333BB9 /* NGNMain.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FDC5C1B873CB500333BB9 /* NGNMain.m */; };
 		3A9FDC601B873CB500333BB9 /* NGNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FDC5F1B873CB500333BB9 /* NGNAppDelegate.m */; };
-		3A9FDC731B8741B000333BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A9FDC721B8741B000333BB9 /* LaunchScreen.storyboard */; };
 		F945CC9630CEFDA6267D9431 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BA23FED4964A28257B0EC8C /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0BA23FED4964A28257B0EC8C /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		26D6FAAA546F7371E11EA90C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3A3E664F1B8753DF00339367 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		3A9FDC581B873CB500333BB9 /* ngnews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ngnews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9FDC5C1B873CB500333BB9 /* NGNMain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGNMain.m; sourceTree = "<group>"; };
 		3A9FDC5E1B873CB500333BB9 /* NGNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGNAppDelegate.h; sourceTree = "<group>"; };
 		3A9FDC5F1B873CB500333BB9 /* NGNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGNAppDelegate.m; sourceTree = "<group>"; };
 		3A9FDC6C1B873CB500333BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3A9FDC721B8741B000333BB9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B7A01B79386D9E48E3917BD9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,7 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				3A9FDC6C1B873CB500333BB9 /* Info.plist */,
-				3A9FDC721B8741B000333BB9 /* LaunchScreen.storyboard */,
+				3A3E664F1B8753DF00339367 /* LaunchScreen.xib */,
 			);
 			name = "Supporting Files";
 			path = ngnews;
@@ -155,7 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A9FDC731B8741B000333BB9 /* LaunchScreen.storyboard in Resources */,
+				3A3E66501B8753DF00339367 /* LaunchScreen.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
